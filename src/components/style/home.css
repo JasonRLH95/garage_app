@@ -1,0 +1,45 @@
+#homeMainDiv{
+    height: 77.2vh;
+    background-image: url('../images/homepage_img.jpeg');
+    background-size: cover;
+    padding-top: 150px;
+}
+#homeSubDiv{
+    width: 400px;
+    height: 200px;
+    background-color: #1C1C22;
+    color: #E0E0E0;
+    margin: auto;
+    border: 2px solid #E0E0E0;
+    border-radius: 15px;
+    padding: 80px 30px 40px 30px;
+}
+#homeBtnsDiv{
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px auto 0;
+}
+.homeBtns{
+    width: 150px;
+    height: 40px;
+    background-color: #E0E0E0;
+    border: none;
+    color: #1C1C22;
+    font-size: 23px;
+    font-weight: bold;
+}
+#homeRadioDiv{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    margin: auto;
+    align-items: start;
+}
+#homeSelect{
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+}

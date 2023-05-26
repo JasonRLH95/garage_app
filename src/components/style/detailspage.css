@@ -1,0 +1,36 @@
+#details_mainDiv{
+    height: 557px;
+    background-image: url('../images/background_img2.jpeg');
+    background-position: 0 -700px;
+    background-size: cover;
+    filter: opacity(90%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 11vw;
+}
+#details_subDiv{
+    border: 1px solid #1C1C22;
+    background-color: #E0E0E0;
+    width: 300px;
+    height: 554px;
+    text-align: left;
+    text-indent: 15px;
+    filter: opacity(90%);
+}
+.details_span{
+    font-weight: bold;
+}
+.details_p{
+    font-size: 23px;
+    text-indent: 5px;
+}
+#details_comp_p{
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+}
+#details_comp_p:hover{
+    color: red;
+}

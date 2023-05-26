@@ -1,0 +1,14 @@
+.issueCompDiv{
+    width:100%;
+    height:65px;
+    margin-bottom:5px;
+    display: flex;
+}
+.issueCompSubDivs{
+    width: 33.3333%;
+    border: 1px solid black;
+    border-left: none;
+}
+#issueCompSubDiv1{
+    border-left: 1px solid black;
+}

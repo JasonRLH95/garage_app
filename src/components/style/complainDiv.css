@@ -1,0 +1,57 @@
+#complainDiv {
+    width: 500px;
+    height: 500px;
+    margin-top: 30px;
+    border: 1px solid #1C1C22;
+    background-color: #E0E0E0;
+    position: relative;
+    filter: opacity(90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#X_btn{
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#complain_nameInput{
+    width: 250px;
+    height: 30px;
+
+}
+#comp_textArea{
+    min-height: 200px;
+    max-height: 350px;
+    min-width: 250px;
+    max-width: 400px;
+}
+label{
+    font-size: 24px;
+}
+#comp_inputDiv1{
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#comp_inputDiv2{
+    min-width: 350px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#compDiv_saveBtn{
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #1C1C22;
+    color: #E0E0E0;
+    cursor: pointer;
+}

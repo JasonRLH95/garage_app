@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+#logo_main{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 40;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    color: #C2C2C2;
+    text-shadow: 4px 4px black;
+}
+#logo_img{
+    filter: invert(85%);
+    position: absolute;
+    margin-left: 20px;
+    width: 75px;
+}

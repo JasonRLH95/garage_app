@@ -1,0 +1,49 @@
+#historyMainDiv{
+    height: 557px;
+    background-image: url('../images/background_img3.jpeg');
+    background-size: cover;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+#historySubDiv1,#historySubDiv2{
+    border:1px solid #1C1C22;
+    background-color: #E0E0E0;
+    border-radius:10px;
+    width:435px;
+    min-height:200px;
+    height:fit-content;
+    max-height:425px;
+    margin-top:50px;
+    padding: 0 15px 30px 15px;
+    overflow:auto;
+}
+#historySubDiv2{
+    position: relative;
+}
+table{
+    width:400px;
+    border-collapse:collapse;
+}
+#historySub_p1{
+    margin:100px auto 0;
+}
+#totTime_info_div{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 150px;
+    align-items: center;
+    justify-content: space-between;
+}
+#information{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #453639;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
