@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/garage_app/static/css/main.1f6548a0.css",
+    "main.js": "/garage_app/static/js/main.d733849c.js",
+    "static/js/787.ce796640.chunk.js": "/garage_app/static/js/787.ce796640.chunk.js",
+    "static/media/homepage_img.jpeg": "/garage_app/static/media/homepage_img.d3371b2485a24c2794a2.jpeg",
+    "static/media/background_img.jpeg": "/garage_app/static/media/background_img.2495d889b08bc121b597.jpeg",
+    "static/media/background_img3.jpeg": "/garage_app/static/media/background_img3.15849818fcdafc0904c1.jpeg",
+    "static/media/background_img2.jpeg": "/garage_app/static/media/background_img2.8e9d4cc0fb4e7524c628.jpeg",
+    "index.html": "/garage_app/index.html",
+    "main.1f6548a0.css.map": "/garage_app/static/css/main.1f6548a0.css.map",
+    "main.d733849c.js.map": "/garage_app/static/js/main.d733849c.js.map",
+    "787.ce796640.chunk.js.map": "/garage_app/static/js/787.ce796640.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f6548a0.css",
+    "static/js/main.d733849c.js"
+  ]
+}
