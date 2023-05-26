@@ -2,7 +2,7 @@
   "name": "garage_app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://JasonRLH95.github.io/garage_app",
+  "homepage": "http://JasonRLH95.github.io/garage_app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
