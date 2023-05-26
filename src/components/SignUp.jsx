@@ -102,7 +102,7 @@ export default function SignUp(props) {
         if(cnt===7){
             let temp=new props.class(fullname,ID,phone,address,carNumber,carYear,carCompany,carType);
             props.setClientsArr([...props.clientsArr,temp])
-            nav('/')
+            nav('/garage_app')
         }
     }
     return (

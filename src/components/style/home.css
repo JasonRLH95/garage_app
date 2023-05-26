@@ -35,7 +35,7 @@
     flex-direction: column;
     width: 180px;
     margin: auto;
-    align-items: start;
+    align-items: flex-start;
 }
 #homeSelect{
     width: 250px;

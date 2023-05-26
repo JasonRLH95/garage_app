@@ -45,7 +45,7 @@ export default function Toolbar(props) {
     }
     return (
     <div id='toolbar_main'>
-        <button id='logoutBtn' onClick={()=>{nav('/')}}>Logout</button>
+        <button id='logoutBtn' onClick={()=>{nav('/garage_app')}}>Logout</button>
         {btnClicked()}
         <button onClick={()=>{setBtnFlag('toolbar_btn1');props.setPageFlag(2)}} className='toolbar_btns' id='toolbar_btn1'>Client details</button>
         <button onClick={()=>{setBtnFlag('toolbar_btn2');props.setPageFlag(1)}} className='toolbar_btns' id='toolbar_btn2'>Client history</button>

@@ -231,7 +231,7 @@ function App() {
       desc:"Passing a whole test for the car once a year"
     }
   ];
-  var temp;
+  // var temp;
   return (
     <div className="App">
       <BrowserRouter>
@@ -239,7 +239,7 @@ function App() {
       <button onClick={()=>{currentClient.addIssue('lioz',2000,12)}}>addissue</button>
       <button onClick={()=>{currentClient.addComplain('i have issue with your service','lioz')}}>addcomplains</button> */}
         <Routes>
-          <Route path='/' element={<Home arr={clientsArr} currentClient={currentClient} setCurrentClient={setCurrentClient}/>}/>
+          <Route path='/garage_app' element={<Home arr={clientsArr} currentClient={currentClient} setCurrentClient={setCurrentClient}/>}/>
           <Route path='/signup' element={<SignUp class={Client} setClientsArr={setClientsArr} clientsArr={clientsArr}/>}/>
           <Route path={`/client_${currentClient.fullname}`} element={<ClientPage currentClient={currentClient} defIssuesArr={defIssuesArr}/>}/>
           {/* <Route path={`/client`} element={<ClientPage currentClient={currentClient} defIssuesArr={defIssuesArr}/>}/> */}
