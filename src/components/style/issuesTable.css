@@ -8,12 +8,12 @@
     background-position: 0 -100px;
     background-size: cover;
 }
-table,tr,th,td{
+#table,tr,th,td{
     border: 1px solid #1C1C22;
     border-collapse: collapse;
-    background-color: #E0E0E0;
 }
-table{
+#table{
+    background-color: #E0E0E0;
     width: 500px;
     height: 400px;
 }
@@ -46,4 +46,24 @@ table{
     color: #E0E0E0;
     margin: 0 auto;
     cursor: pointer;
+}
+
+@media(max-width:768px) {
+    #issueTableMainDiv{
+        height: 675px;
+        width: 103%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        background-position: center;
+    }
+    #table{
+        /* background-color: red; */
+        height: 40%;
+        width: 64%;
+    }
+    #descriptionDiv{
+        height: 40%;
+        width: 60%;
+    }
 }

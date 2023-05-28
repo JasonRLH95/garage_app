@@ -20,12 +20,14 @@
     margin-bottom: 5px;
     font-size: 20px;
     text-indent: 8px;
+    background-color: #E0E0E0;
 }
 .signupShortInputs{
     width: 120px;
     height: 30px;
     margin-bottom: 5px;
     text-indent: 3px;
+    background-color: #E0E0E0;
 }
 #shortInputsDiv{
     display: flex;
@@ -41,6 +43,7 @@
     border-radius: 12px;
     text-indent: 8px;
     margin-bottom: 5px;
+    background-color: #E0E0E0;
 }
 #signupBtn{
     width: 150px;

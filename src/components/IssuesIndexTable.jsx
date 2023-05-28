@@ -24,7 +24,7 @@ export default function IssuesIndexTable(props) {
     }
     return (
     <div id='issueTableMainDiv'>
-        <table>
+        <table id='table'>
             <tr>
                 <th>Issue code</th>
                 <th>Issue name</th>
