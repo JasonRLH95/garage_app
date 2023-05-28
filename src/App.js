@@ -241,8 +241,8 @@ function App() {
         <Routes>
           <Route path='/garage_app' element={<Home arr={clientsArr} currentClient={currentClient} setCurrentClient={setCurrentClient}/>}/>
           <Route path='/signup' element={<SignUp class={Client} setClientsArr={setClientsArr} clientsArr={clientsArr}/>}/>
-          {/* <Route path={`/client_${currentClient.fullname}`} element={<ClientPage currentClient={currentClient} defIssuesArr={defIssuesArr}/>}/> */}
-          <Route path={`/client`} element={<ClientPage currentClient={currentClient} defIssuesArr={defIssuesArr}/>}/>
+          <Route path={`/client_${currentClient.fullname}`} element={<ClientPage currentClient={currentClient} defIssuesArr={defIssuesArr}/>}/>
+          {/* <Route path={`/client`} element={<ClientPage currentClient={currentClient} defIssuesArr={defIssuesArr}/>}/> */}
         </Routes>
       </BrowserRouter>
     </div>
