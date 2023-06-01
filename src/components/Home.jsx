@@ -39,6 +39,12 @@ export default function Home(props) {
             return val;
         })
     }
+    const login=()=>{
+        if(optionSelected===props.currentClient.id||optionSelected===props.currentClient.car){
+            nav(`/client_${props.currentClient.fullname}`)
+        }
+        else{return alert('Must pick a user first')}
+    }
     return (
     <div id='homeMainDiv'>
         <div id='homeSubDiv'>
@@ -58,7 +64,7 @@ export default function Home(props) {
 
             </div>
             <div id='homeBtnsDiv'>
-                <button id='homeBtn1' className='homeBtns' onClick={()=>{nav(`/client_${props.currentClient.fullname}`)}}>Login</button>
+                <button id='homeBtn1' className='homeBtns' onClick={login}>Login</button>
                 <button id='homeBtn2' className='homeBtns' onClick={()=>{nav('/signup')}}>New Client</button>
             </div>
         </div>

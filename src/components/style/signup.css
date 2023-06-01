@@ -1,5 +1,5 @@
 #signupMainDiv{
-    height: 81.7vh;
+    min-height: 600px;
     background-image: url('../images/homepage_img.jpeg');
     background-size: cover;
     padding-top: 120px;
@@ -52,4 +52,41 @@
     color: #1C1C22;
     font-size: 18px;
     font-weight: bold;
+}
+
+@media(max-width:768px){
+    #signupMainDiv{
+        min-width: 500px;
+        min-height: 77.2vw;
+        padding-top: 100px;
+        padding-bottom: 60vw;
+    }
+    #signupSubDiv{
+        min-width: 200px;
+        min-height: 200px;
+        width: 80vw;
+        height: 90vw;
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .signupLongInputs{
+        width: 80%;
+        height: 7vw;
+        max-height: 30px;
+    }
+    #shortInputsDiv{
+        width: 85%;
+        justify-content: space-evenly;
+    }
+    .signupShortInputs{
+        width: 45%;
+        height: 7vw;
+        max-height: 30px;
+    }
+    #signupSelect{
+        width: 80%;
+    }
+    #signupBtn{
+        width: 50%;
+    }
 }

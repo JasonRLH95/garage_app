@@ -1,5 +1,5 @@
 #homeMainDiv{
-    height: 77.2vh;
+    min-height: 600px;
     background-image: url('../images/homepage_img.jpeg');
     background-size: cover;
     padding-top: 150px;
@@ -43,4 +43,38 @@
     border-radius: 10px;
     font-size: 20px;
     background-color: #E0E0E0;
+    margin-bottom: 10px;
+}
+
+@media(max-width:768px){
+    #homeMainDiv{
+        min-width: 500px;
+        min-height: 77.2vw;
+        padding-top: 100px;
+        padding-bottom: 60vw;
+    }
+    #homeSubDiv{
+        min-width: 200px;
+        width: 70vw;
+        max-width: 400px;
+        height: 50vh;
+        max-height: 200px;
+        padding: 10% 30px 40px 5%;
+    }
+    #homeSelect{
+        width: 90%;
+        max-width: 250px;
+    }
+    #homeBtnsDiv{
+        width: 80%;
+        max-width: 320px;
+    }
+    .homeBtns{
+        width: 45%;
+        max-width: 150px;
+        min-height: 40px;
+        height: inherit;
+        max-height: fit-content;
+        font-size: 3.4vw;
+    }
 }
