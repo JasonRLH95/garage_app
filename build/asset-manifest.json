@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/garage_app/static/css/main.4a718979.css",
-    "main.js": "/garage_app/static/js/main.63edb318.js",
+    "main.css": "/garage_app/static/css/main.bc4fb4bc.css",
+    "main.js": "/garage_app/static/js/main.3ad2c4db.js",
     "static/js/787.ce796640.chunk.js": "/garage_app/static/js/787.ce796640.chunk.js",
     "static/media/homepage_img.jpeg": "/garage_app/static/media/homepage_img.d3371b2485a24c2794a2.jpeg",
     "static/media/background_img.jpeg": "/garage_app/static/media/background_img.2495d889b08bc121b597.jpeg",
     "static/media/background_img3.jpeg": "/garage_app/static/media/background_img3.15849818fcdafc0904c1.jpeg",
     "static/media/background_img2.jpeg": "/garage_app/static/media/background_img2.8e9d4cc0fb4e7524c628.jpeg",
     "index.html": "/garage_app/index.html",
-    "main.4a718979.css.map": "/garage_app/static/css/main.4a718979.css.map",
-    "main.63edb318.js.map": "/garage_app/static/js/main.63edb318.js.map",
+    "main.bc4fb4bc.css.map": "/garage_app/static/css/main.bc4fb4bc.css.map",
+    "main.3ad2c4db.js.map": "/garage_app/static/js/main.3ad2c4db.js.map",
     "787.ce796640.chunk.js.map": "/garage_app/static/js/787.ce796640.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a718979.css",
-    "static/js/main.63edb318.js"
+    "static/css/main.bc4fb4bc.css",
+    "static/js/main.3ad2c4db.js"
   ]
 }

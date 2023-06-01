@@ -1,5 +1,6 @@
 #signupMainDiv{
     min-height: 600px;
+    height: 100vh;
     background-image: url('../images/homepage_img.jpeg');
     background-size: cover;
     padding-top: 120px;
