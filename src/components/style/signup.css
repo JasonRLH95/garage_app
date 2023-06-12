@@ -4,6 +4,7 @@
     background-image: url('../images/homepage_img.jpeg');
     background-size: cover;
     padding-top: 120px;
+    padding-bottom: 30vh;
 }
 #signupSubDiv{
     margin: auto;
@@ -60,7 +61,7 @@
         min-width: 500px;
         min-height: 77.2vw;
         padding-top: 100px;
-        padding-bottom: 60vw;
+        padding-bottom: 60vh;
     }
     #signupSubDiv{
         min-width: 200px;

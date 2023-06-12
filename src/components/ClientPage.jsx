@@ -4,7 +4,6 @@ import Toolbar from './Toolbar.jsx';
 import IssuesIndexTable from './IssuesIndexTable.jsx';
 import History from './History.jsx';
 import DetailsPage from './DetailsPage.jsx';
-import './style/clientpage.css';
 
 export default function ClientPage(props) {
     const [pageFlag,setPageFlag] = useState(0);

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import './style/home.css';
+import HomeLogo from './HomeLogo';
 
 export default function Home(props) {
     const nav=useNavigate();
@@ -13,7 +14,7 @@ export default function Home(props) {
         if(radioFlag==='ID'){
             return props.arr.map((val,inx)=>{
                     if(inx===0){
-                        return <option hidden disabled selected>Select from the list</option>
+                        return <option disabled selected>Select from the list</option>
                     }
                     else{
                         return <option>{val.id}</option>
@@ -23,7 +24,7 @@ export default function Home(props) {
         else if(radioFlag==='Car Number'){
             return props.arr.map((val,inx)=>{
                     if(inx===0){
-                        return <option hidden disabled selected>Select from the list</option>
+                        return <option disabled selected>Select from the list</option>
                     }
                     else{
                         return <option>{val.car}</option>
@@ -47,6 +48,7 @@ export default function Home(props) {
     }
     return (
     <div id='homeMainDiv'>
+        <HomeLogo/>
         <div id='homeSubDiv'>
             {searchClient()}
             <select id='homeSelect' onChange={(e)=>{setOptionSelected(e.target.value)}}>

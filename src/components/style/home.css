@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 #homeMainDiv{
     min-height: 600px;
     height: 100vh;
     background-image: url('../images/homepage_img.jpeg');
     background-size: cover;
     padding-top: 150px;
+    padding-bottom: 20vh;
 }
 #homeSubDiv{
     width: 400px;
@@ -50,7 +52,7 @@
 @media(max-width:768px){
     #homeMainDiv{
         min-width: 500px;
-        min-height: 77.2vw;
+        width: 103vw;
         padding-top: 100px;
         padding-bottom: 60vw;
     }

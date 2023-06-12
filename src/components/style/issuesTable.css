@@ -50,15 +50,17 @@
 
 @media(max-width:768px) {
     #issueTableMainDiv{
-        height: 675px;
+        min-height: 800px;
+        min-width: 300px;
         width: 103%;
         flex-direction: column;
         align-items: center;
         padding-top: 50px;
+        padding-bottom: 60vh;
         background-position: center;
+        background-attachment: fixed;
     }
     #table{
-        /* background-color: red; */
         height: 40%;
         width: 64%;
     }

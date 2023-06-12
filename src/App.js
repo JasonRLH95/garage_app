@@ -11,11 +11,11 @@ function App() {
   class Client{
     complains;
     issuesArr;
-    constructor(fullname,id,phone,address,car,year,company,type){
+    constructor(fullname,id,phone,city,car,year,company,type){
       this.fullname=fullname;
       this.id=id;
       this.phone=phone;
-      this.address=address;
+      this.city=city;
       this.car=car;
       this.year=year;
       this.company=company;
@@ -231,18 +231,13 @@ function App() {
       desc:"Passing a whole test for the car once a year"
     }
   ];
-  // var temp;
   return (
     <div className="App">
       <BrowserRouter>
-      {/* <button onClick={()=>{temp = new Client('lioz hen','315070300','0507170101','harish','3514533','2014','kia','rio'); console.log(temp);setCurrentClient(temp); return temp}}>adduser</button>
-      <button onClick={()=>{currentClient.addIssue('lioz',2000,12)}}>addissue</button>
-      <button onClick={()=>{currentClient.addComplain('i have issue with your service','lioz')}}>addcomplains</button> */}
         <Routes>
           <Route path='/garage_app' element={<Home arr={clientsArr} currentClient={currentClient} setCurrentClient={setCurrentClient}/>}/>
           <Route path='/signup' element={<SignUp class={Client} setClientsArr={setClientsArr} clientsArr={clientsArr}/>}/>
           <Route path={`/client_${currentClient.fullname}`} element={<ClientPage currentClient={currentClient} defIssuesArr={defIssuesArr}/>}/>
-          {/* <Route path={`/client`} element={<ClientPage currentClient={currentClient} defIssuesArr={defIssuesArr}/>}/> */}
         </Routes>
       </BrowserRouter>
     </div>

@@ -11,7 +11,7 @@ export default function History(props) {
     var TOTdays= 0;
     const deployComplains=()=>{
         if(props.currentClient.complains.length===0){
-            return <p>nothing yet</p>
+            return <p className='empty_p'>| Empty... |</p>
         }
         else{
             return props.currentClient.complains.map((val)=>{
@@ -21,7 +21,7 @@ export default function History(props) {
     }
     const deployIssues=()=>{
         if(props.currentClient.issuesArr.length===0){
-            return <p>nothing yet</p>
+            return <p className='empty_p'>| Empty... |</p>
         }
         else{
             return props.currentClient.issuesArr.map((val)=>{
@@ -56,8 +56,8 @@ export default function History(props) {
             <div id='totTime_info_div'>
                 <p>total time: {TOTdays}d {TOTtime}h</p>
                 <div id='information' onMouseEnter={()=>{setInfoFlag(true)}} onMouseLeave={()=>{setInfoFlag(false)}}>?</div>
-            </div>
                 <div>{showInfo()}</div>
+            </div>
         </div>
     </div>
     )

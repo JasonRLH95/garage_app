@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './style/signup.css';
+import HomeLogo from './HomeLogo';
 
 export default function SignUp(props) {
     const nav=useNavigate();
-    const [fullname,setFullname] = useState('')
-    const [ID,setID] = useState('')
-    const [phone,setPhone] = useState('')
-    const [address,setAddress] = useState('')
-    const [carNumber,setCarNumber] = useState('')
-    const [carCompany,setCarCompany] = useState('')
-    const [carType,setCarType] = useState('')
-    const [carYear,setCarYear] = useState('')
+    const [fullname,setFullname] = useState('');
+    const [ID,setID] = useState('');
+    const [phone,setPhone] = useState('');
+    const [city,setCity] = useState('');
+    const [carNumber,setCarNumber] = useState('');
+    const [carCompany,setCarCompany] = useState('');
+    const [carType,setCarType] = useState('');
+    const [carYear,setCarYear] = useState('');
     var yearsArr=[];
     const deploy=()=>{
         for(let i=2024;i>=1950;i--){
@@ -21,7 +22,7 @@ export default function SignUp(props) {
     deploy();
     const validation=()=>{
         let cnt=0;
-        if(fullname.length===0||ID.length===0||phone.length===0||address.length===0||carNumber.length===0||carType.length===0||carYear.length===0){
+        if(fullname.length===0||ID.length===0||phone.length===0||city.length===0||carNumber.length===0||carType.length===0||carYear.length===0){
             return alert('Must fill all the fields first!')
         }
         if(fullname.length!==0){
@@ -60,9 +61,9 @@ export default function SignUp(props) {
             }
             else{return alert('Phone must be 10 numbers length only!')}
         }
-        if(address.length!==0){
-            for(let i=0;i<address.length;i++){
-                if((address[i]>='a'&&address[i]<='z')||(address[i]>='A'&&address[i]<='Z')){
+        if(city.length!==0){
+            for(let i=0;i<city.length;i++){
+                if((city[i]>='a'&&city[i]<='z')||(city[i]>='A'&&city[i]<='Z')){
                     continue;
                 }
                 else{return alert('Address must includes only English characters!')}
@@ -100,17 +101,18 @@ export default function SignUp(props) {
             cnt++
         }
         if(cnt===7){
-            let temp=new props.class(fullname,ID,phone,address,carNumber,carYear,carCompany,carType);
+            let temp=new props.class(fullname,ID,phone,city,carNumber,carYear,carCompany,carType);
             props.setClientsArr([...props.clientsArr,temp])
             nav('/garage_app')
         }
     }
     return (
     <div id='signupMainDiv'>
+        <HomeLogo/>
         <div id='signupSubDiv'>
             <h1 id='signupHeader'>Signup here:</h1>
             <input className='signupLongInputs' onChange={(e)=>{setFullname(e.target.value)}} type='text' placeholder='Enter your Full name'/><br/>
-            <input className='signupLongInputs' onChange={(e)=>{setAddress(e.target.value)}} type='text' placeholder='Enter your Address'/><br/>
+            <input className='signupLongInputs' onChange={(e)=>{setCity(e.target.value)}} type='text' placeholder='Enter your City'/><br/>
             <input className='signupLongInputs' onChange={(e)=>{setID(e.target.value)}} type='text' placeholder='Enter your ID'/><br/>
             <input className='signupLongInputs' onChange={(e)=>{setPhone(e.target.value)}} type='text' placeholder='Enter Phone number'/><br/>
             <input className='signupLongInputs' onChange={(e)=>{setCarNumber(e.target.value)}} type='text' placeholder='Enter Car number'/><br/>

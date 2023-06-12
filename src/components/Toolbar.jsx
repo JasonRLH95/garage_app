@@ -51,7 +51,7 @@ export default function Toolbar(props) {
     const btn4 = document.getElementById('logoutMobileBtn');
     const showMobileToolbar=()=>{
         if(div!=null &&mobileBtnFlag===true){
-            div.style.width = '100%';
+            div.style.width = '105%';
             btn1.style.width = '100%';
             btn1.style.fontSize = '9vw';
             btn1.style.opacity = '100%'
@@ -92,14 +92,10 @@ export default function Toolbar(props) {
     setTimeout(() => {
         showMobileToolbar()
     }, 100);
-    // setInterval(() => {
-    //     if(x<=100){x--}
-    // }, 1);
-    // showMobileToolbar();
     return (
         <div>
             <div id='toolbar_main'>
-                <button id='logoutBtn' onClick={()=>{nav('/garage_app')}}>Logout</button>
+                <button id='logoutBtn' onClick={()=>{nav('/garage_app')}}>Exit</button>
                 {btnClicked()}
                 <button onClick={()=>{setBtnFlag('toolbar_btn1');props.setPageFlag(2)}} className='toolbar_btns' id='toolbar_btn1'>Client details</button>
                 <button onClick={()=>{setBtnFlag('toolbar_btn2');props.setPageFlag(1)}} className='toolbar_btns' id='toolbar_btn2'>Client history</button>
@@ -107,7 +103,6 @@ export default function Toolbar(props) {
                 <div id='mobileToolbarDiv'>
                     <div id='mobileToolbar_img' onClick={()=>{setMobileBtnFlag(!mobileBtnFlag)}}></div>
                 </div>
-                    {/* <div id='helper'>{showMobileToolbar()}</div> */}
             </div>
             <div id='mobileToolBar'>
                     {btnClicked()}

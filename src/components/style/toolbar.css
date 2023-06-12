@@ -19,7 +19,6 @@
     border-top-right-radius: 25px;
     cursor: pointer;
     font-weight: bold;
-    /* font-size: 20px; */
     font-size: 1.5vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -37,13 +36,15 @@
 }
 #logoutBtn{
     background-color: #1C1C22;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
     color: #E0E0E0;
     border: none;
     cursor: pointer;
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 5px;
-    font-size: 15px;
+    font-size: 19px;
 }
 #logoutBtn:hover{
     color: red;
@@ -56,6 +57,7 @@
 }
 @media(max-width:768px) {
     #toolbar_main{
+        min-width: 300px;
         height: 30vw;
         max-height: 250px;
         width: 103%;
@@ -70,7 +72,6 @@
         display: block;
         width: 30%;
         height: 100%;
-        /* background-color: red; */
         position: absolute;
         right: 0;
         display: flex;
@@ -80,7 +81,9 @@
     #mobileToolbar_img{
         filter: invert(85%);
         cursor: pointer;
+        min-width: 50px;
         width: 60%;
+        min-height: 50px;
         height: 60%;
         background-image: url('../images/menu_icon.png');
         background-size: cover;
@@ -88,10 +91,8 @@
     #mobileToolBar{
         width: 0;
         height: 110vh;
-        background-color: #E0E0E0;
         z-index: 100;
         position: absolute;
-        right: 0;
         top: 30vw;
         display: flex;
         flex-direction: column;
