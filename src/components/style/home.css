@@ -55,6 +55,7 @@
         width: 103vw;
         padding-top: 100px;
         padding-bottom: 60vw;
+        background-position: center;
     }
     #homeSubDiv{
         min-width: 200px;

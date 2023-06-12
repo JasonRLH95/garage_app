@@ -62,6 +62,7 @@
         min-height: 77.2vw;
         padding-top: 100px;
         padding-bottom: 60vh;
+        background-position: center;
     }
     #signupSubDiv{
         min-width: 200px;

@@ -46,7 +46,7 @@
 @media(max-width:768px){
     #details_mainDiv{
         flex-direction: column;
-        background-position: 0 -200px;
+        background-position: center;
         background-attachment: fixed;
         min-width: 300px;
         width: 103%;
