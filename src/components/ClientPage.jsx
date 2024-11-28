@@ -1,9 +1,11 @@
 import React,{useState} from 'react';
+import './style/clientPage.css';
 import Logo from './Logo.jsx';
 import Toolbar from './Toolbar.jsx';
 import IssuesIndexTable from './IssuesIndexTable.jsx';
 import History from './History.jsx';
 import DetailsPage from './DetailsPage.jsx';
+import Navbar from './Navbar.jsx';
 
 export default function ClientPage(props) {
     const [pageFlag,setPageFlag] = useState(0);
@@ -19,10 +21,9 @@ export default function ClientPage(props) {
         }
     }
     return (
-    <div>
-        <Logo/>
-        <Toolbar setPageFlag={setPageFlag}/>
-        <div id='pagesDiv'>
+    <div className='clientPage_mainDiv'>
+        <Navbar setPageFlag={setPageFlag}/>
+        <div className='pagesDiv'>
             {changePages()}
         </div>
     </div>

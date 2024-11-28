@@ -1,0 +1,10 @@
+.clientPage_mainDiv{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pagesDiv{
+    height: 85.8vh;
+    /* background-color: red; */
+}

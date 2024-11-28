@@ -93,19 +93,19 @@ export default function Toolbar(props) {
         showMobileToolbar()
     }, 100);
     return (
-        <div>
+        <div className='toolbar_component'>
             <div id='toolbar_main'>
                 <button id='logoutBtn' onClick={()=>{nav('/garage_app')}}>Exit</button>
                 {btnClicked()}
                 <button onClick={()=>{setBtnFlag('toolbar_btn1');props.setPageFlag(2)}} className='toolbar_btns' id='toolbar_btn1'>Client details</button>
                 <button onClick={()=>{setBtnFlag('toolbar_btn2');props.setPageFlag(1)}} className='toolbar_btns' id='toolbar_btn2'>Client history</button>
-                <button onClick={()=>{setBtnFlag('toolbar_btn3');props.setPageFlag(0)}} className='toolbar_btns' id='toolbar_btn3'>Issues index table</button>
+                <button onClick={()=>{setBtnFlag('toolbar_btn3');props.setPageFlag(0)}} className='toolbar_btns' id='toolbar_btn3'>Issues table</button>
                 <div id='mobileToolbarDiv'>
                     <div id='mobileToolbar_img' onClick={()=>{setMobileBtnFlag(!mobileBtnFlag)}}></div>
                 </div>
             </div>
             <div id='mobileToolBar'>
-                    {btnClicked()}
+                {btnClicked()}
                 <button onClick={()=>{setMobileBtnFlag(false);props.setPageFlag(0)}} className='mobileToolbar_btns' id='mobileToolbar_btn3'></button>
                 <button onClick={()=>{setMobileBtnFlag(false);props.setPageFlag(1)}} className='mobileToolbar_btns' id='mobileToolbar_btn2'></button>
                 <button onClick={()=>{setMobileBtnFlag(false);props.setPageFlag(2)}} className='mobileToolbar_btns' id='mobileToolbar_btn1'></button>

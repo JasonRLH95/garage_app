@@ -1,6 +1,7 @@
 #historyMainDiv{
-    min-height: 600px;
-    height: 100vh;
+    /* min-height: 600px; */
+    height: calc(100vh - 100px);
+    /* height: 100vh; */
     background-image: url('../images/background_img3.jpeg');
     background-size: cover;
     display:flex;

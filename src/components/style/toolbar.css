@@ -1,17 +1,24 @@
+.toolbar_component{
+    width: 38%;
+    height: 100%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    /* background-color: green; */
+}
 #toolbar_main{
-    background-color: #1C1C22;
-    width: 100%;
-    height: 10vw;
-    max-height: 100px;
-    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    /* background-color: yellow; */
 }
 .toolbar_btns{
     background-color: #E0E0E0;
     width: 11vw;
     height: 5vw;
-    position: absolute;
+    /* position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
     border: 1px solid #1C1C22;
     border-bottom: none;
     border-right: none;
@@ -29,19 +36,20 @@
     background-color: #E0E0E0;
 }
 #toolbar_btn2{
-    right: 11vw;
+    /* right: 11vw; */
 }
 #toolbar_btn3{
-    right: 22vw;
+    /* right: 22vw; */
 }
 #logoutBtn{
-    background-color: #1C1C22;
+    /* background-color: #1C1C22; */
+    background-color: transparent;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: #E0E0E0;
     border: none;
     cursor: pointer;
-    position: absolute;
+    /* position: absolute; */
     right: 15px;
     top: 5px;
     font-size: 19px;
@@ -57,10 +65,13 @@
 }
 @media(max-width:768px) {
     #toolbar_main{
-        min-width: 300px;
-        height: 30vw;
+        /* min-width: 300px; */
+        /* height: 30vw; */
+        height: 100%;
         max-height: 250px;
-        width: 103%;
+        width: 100%;
+        justify-content: end;
+        align-items: center;
     }
     .toolbar_btns{
         display: none;
@@ -69,14 +80,14 @@
         display: none;
     }
     #mobileToolbarDiv{
-        display: block;
-        width: 30%;
-        height: 100%;
-        position: absolute;
-        right: 0;
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
+        min-width: 80px;
+        width: 30%;
+        height:90%;
+        /* background-color: red; */
     }
     #mobileToolbar_img{
         filter: invert(85%);
@@ -84,21 +95,26 @@
         min-width: 50px;
         width: 60%;
         min-height: 50px;
-        height: 60%;
+        /* height: 60%; */
         background-image: url('../images/menu_icon.png');
         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background-color: green; */
     }
     #mobileToolBar{
-        width: 0;
+        width: 100vw;
         height: 110vh;
-        z-index: 100;
+        z-index: 39;
         position: absolute;
-        top: 30vw;
+        top: 14.1vh;
+        left: 0;
         display: flex;
         flex-direction: column;
         transition-property: width;
         transition-duration: 200ms;
         transition-timing-function: ease-out;
+        /* z-index */
     }
     .mobileToolbar_btns{
         width: 0;
@@ -112,5 +128,8 @@
         transition-property: width, font-size, opacity;
         transition-duration: 200ms;
         transition-timing-function: ease-in-out  ;
+    }
+    #logoutMobileBtn:hover{
+        color:red;
     }
 }

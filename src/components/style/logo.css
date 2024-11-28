@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 #logoMainDiv{
     width: 60%;
-    height: 10vw;
-    max-height: 100px;
+    /* background-color: blue; */
+    /* height: 10vw; */
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    position: absolute;
-    left: 15px;
+    /* position: absolute; */
+    /* left: 15px; */
     z-index: 40;
 }
 #logoSubDiv{
     font-size: 5vw;
+    /* font-size: 3.5rem; */
+    /* font-size: 100%; */
     font-weight: bold;
     font-family: 'Pacifico', cursive;
     color: #C2C2C2;
     text-shadow: 4px 4px black;
+    /* background-color: red; */
 }
 #logo_img{
     filter: invert(85%);
@@ -36,9 +40,21 @@
     #logoSubDiv{
         margin-left: 30px;
         width: 70%;
-        font-size: 8vw;
+        font-size: 36px;
+        /* font-size: clamp(36px, 8vw, 22px); */
     }
     #logo_img{
         width: 20%;
+    }
+}
+
+@media(max-width:460px){
+    #logoSubDiv{
+        font-size: 26px;
+    }
+}
+@media(max-width:355px){
+    #logoSubDiv{
+        font-size: 21px;
     }
 }
